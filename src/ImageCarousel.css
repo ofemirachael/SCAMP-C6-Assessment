@@ -33,3 +33,24 @@
     height: 70px;
     border-radius: 10px;
 }
+
+.miniimg:hover{
+    box-shadow: 6px 6px 6px #e3898368;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+    
+   
+}
+
+@media only screen and (max-width: 600px) {
+
+    .images{
+        width: 100%;
+        max-width: 400px;
+    }
+ 
+}

@@ -62,6 +62,7 @@
 
 .cartbtn:hover{
     box-shadow: 8px 8px 8px #feb45e45;
+    cursor: pointer;
 }
 
 .counter{
@@ -90,4 +91,13 @@
     border: 0;
     height: 35px;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  
+    .description{
+        width: 100%;
+        max-width: 400px;
+    }
 }

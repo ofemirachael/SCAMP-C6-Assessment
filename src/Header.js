@@ -1,7 +1,7 @@
 import React from "react";
 import './Header.css';
 import { ShoppingCart } from 'react-feather';
-import profile from "./img/profile.jpg"
+import profile from "./img/profile.jpg";
 
 
 class Header extends React.Component{
@@ -15,11 +15,12 @@ class Header extends React.Component{
                 <a className="logo">Sneakers</a>
 
                 <ul className="mainnav">
-                    <li>Collections</li>
-                    <li>Men</li>
-                    <li>Women</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li className="item">Collections</li>
+                    <li className="item">Men</li>
+                    <li className="item">Women</li>
+                    <li className="item">About</li>
+                    <li className="item">Contact</li>
+                    <li className="toggle"><a href="#"><img src="./img/images.png" /></a></li>
                 </ul>
 
             
