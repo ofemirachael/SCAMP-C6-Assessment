@@ -18,46 +18,17 @@ class ImageCarousel extends React.Component{
     state = {   shown: imagefour }
     
     
-    onImageClick = () => {
+    onImageClick = (image, key) => {
+        this.setState({ shown: image })
        
-         for(let i = 0, len = images.length; i < len; i++){
-
-            // images[i].onclick = function() { 
-            //     //this.setState({ shown: images[i] })
-            //     console.log(images[i])
-            // };
-            
-            if(images[i] === imageone){
-                this.setState({ shown: images[0] })
-                console.log(images[i])
-                console.log("clicked 1")
-            }else if (images[i] === imagetwo){
-                this.setState({ shown: images[1] })
-                console.log(images[i])
-                console.log("clicked 2")
-            }else if (images[i] === imagethree){
-                this.setState({ shown: images[2] })
-                console.log("clicked 3")
-                console.log(images[i])
-            }
-            else if (images[i] === imagefour){
-                this.setState({ shown: images[3] })
-                console.log("clicked 4" )
-                console.log(images[i])
-            }
-            else{
-                this.setState({ shown: images[3] })
-              
-            }
-          }
    }
    
 
-    // showPics = images.map((image, key) => {
+    showPics = images.map((image, key) => {
         
-    //     return (<div key={key} onClick={this.onImageClick} ><img src={image}  className="miniimg" /></div>);
+        return (<div key={key} onClick={() => this.onImageClick(image, key)}><img src={image}  className="miniimg" /></div>);
        
-    // })
+    })
 
     render() {
 
@@ -70,11 +41,7 @@ class ImageCarousel extends React.Component{
                     />
                 </div>
                 <div className="minidisplay">
-                    <div key="1" onClick={this.onImageClick.bind(this)} ><img src={images[0]}  className="miniimg" /></div>
-                    <div key="2" onClick={this.onImageClick.bind(this)} ><img src={images[1]}  className="miniimg" /></div>
-                    <div key="3" onClick={this.onImageClick.bind(this)} ><img src={images[2]}  className="miniimg" /></div>
-                    <div key="4" onClick={this.onImageClick.bind(this)} ><img src={images[3]}  className="miniimg" /></div>
-                    {/* {this.showPics} */}
+                    {this.showPics}
                 </div>
             </div>
         );
