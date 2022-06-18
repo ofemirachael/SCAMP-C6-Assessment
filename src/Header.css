@@ -60,7 +60,7 @@
     display: none;
   }
   
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
     
     .product{
         width: 100%;
@@ -69,5 +69,45 @@
     .navigation{
         width: 90%;
     }
+  
+   
+    .toggle{
+        display: block;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    .mainnav{
+        flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ececec;
+    width: 100%;
+      
+    }
+
+    .mainnav li {
+        list-style-type: none;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .blocked{
+        display: block;
+    }
+
+    .hiddened{
+        display: hidden;
+    }
+
+}
+
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+    .product{
+        width: 100%;
+    }
+ 
 }
 

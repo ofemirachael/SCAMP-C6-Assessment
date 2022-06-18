@@ -41,16 +41,28 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 991px) {
-    
+@media only screen and (max-width: 768px) {
+    .images{
+        width: 100%;
+    }
+    .description{
+        width: 100%;
+    }
    
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 767px) and (min-width: 991px) {
 
     .images{
         width: 100%;
         max-width: 400px;
+    }
+    .description{
+        width: 80%;
+    }
+
+    .product{
+        width: 100%;
     }
  
 }
