@@ -1,0 +1,58 @@
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.navigation{
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    flex-direction: row;
+    border-bottom: 1px solid #cecece
+}
+.headerspan{
+    
+    display: flex;
+   
+}
+
+.mainnav{
+    display: flex;
+}
+
+.mainnav li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.mainnav li:hover{
+    color: #ff6e12;
+  
+}
+
+.staticnav{
+    display: flex;
+    margin-left:auto;
+}
+
+.staticnav li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.profilephoto{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin-top: -15px;
+}
+
+
+.product{
+    display: flex;
+    width: 80%;
+    margin: 80px auto;
+}
+
+
