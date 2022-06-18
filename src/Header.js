@@ -4,15 +4,10 @@ import { ShoppingCart } from 'react-feather';
 import profile from "./img/profile.jpg";
 import bc from "./img/bc.png";
 
-// let navi = document.querySelector(".mainnav");
-// function onImageClick()  {
-//   console.log("nav click");
-//   navi.style.display = "block";
-// }
 
 class Header extends React.Component{
 
-  state = { showing: true };
+  state = { showing: false };
 
     render() {
       const { showing } = this.state;
@@ -23,7 +18,7 @@ class Header extends React.Component{
                 <a href="#" className="toggle"  onClick={() => this.setState({ showing: !showing })}><img src={bc} height="24"/></a>
                 <a className="logo">Sneakers</a>
                 
-                    <ul className="mainnav" style={{ display: (!showing ? 'block' : 'none') }}>
+                    <ul className="mainnav" style={{ display: (showing ? 'none' : 'block') }}>
                         <li className="item">Collections</li>
                         <li className="item">Men</li>
                         <li className="item">Women</li>

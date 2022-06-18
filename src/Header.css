@@ -19,12 +19,14 @@
 }
 
 .mainnav{
-    display: flex;
+    display: block;
+    flex-direction: row;
 }
 
 .mainnav li{
     list-style-type: none;
     margin-right: 20px;
+    float: left;
 }
 
 .mainnav li:hover{
@@ -60,7 +62,16 @@
     display: none;
   }
   
-@media only screen and (max-width: 768px) {
+  @media (min-width: 769px) {
+    .mainnav{
+        flex-direction: row;
+        display: block;
+      
+    }
+  
+  }
+
+@media (max-width: 768px) {
     
     .product{
         width: 100%;
@@ -86,11 +97,12 @@
     width: 100%;
       
     }
-
+    
     .mainnav li {
         list-style-type: none;
         margin-right: 20px;
         margin-top: 10px;
+        float: none;
     }
     .blocked{
         display: block;
